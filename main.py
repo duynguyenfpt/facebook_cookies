@@ -6,8 +6,11 @@ app = Flask(__name__)
 
 @app.route('/', methods=['GET'])
 def hello():
-    return "Welcome"
+    return "root"
 
+@app.route('/', methods=['GET'])
+def welcome():
+    return "Welcome again"
 @app.route('/fetch', methods=['POST'])
 def fetch():
     email = request.form['email']
