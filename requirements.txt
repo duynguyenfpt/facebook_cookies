@@ -5,6 +5,7 @@ cffi @ file:///tmp/build/80754af9/cffi_1613246939562/work
 click @ file:///home/linux1/recipes/ci/click_1610990599742/work
 cryptography @ file:///tmp/build/80754af9/cryptography_1613401440205/work
 Flask @ file:///home/ktietz/src/ci/flask_1611932660458/work
+gunicorn==20.0.4
 idna @ file:///tmp/build/80754af9/idna_1609784788857/work
 isort @ file:///tmp/build/80754af9/isort_1612243941122/work
 itsdangerous==1.1.0
