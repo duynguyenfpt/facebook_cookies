@@ -10,7 +10,7 @@ class FacebookAccount():
         self.email = email
         self.password = password
         opt = webdriver.ChromeOptions()
-        opt.headless = True
+        # opt.headless = True
         opt.binary_location = os.environ.get("GOOGLE_CHROME_BIN")
         self.driver = webdriver.Chrome(executable_path=os.environ.get("CHROME_DRIVER_PATH"), chrome_options=opt)
         self.driver.get('https://www.facebook.com/login.php')
