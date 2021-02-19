@@ -15,12 +15,20 @@ def welcome():
 def fetch():
     email = request.form['email']
     password = request.form['password']
-
+    ##
+    print("duy nguyen")
+    print(email)
+    print(password)
+    ##
     my_accont = FacebookAccount(email, password)
     my_accont.login()
     cookies = my_accont.get_cookies()
+    print(cookies)
+    my_accont.access_personal_page(cookies)
     script_result = my_accont.execute_script()
-    result = {'cookies': cookies, 'script_result': script_result}
+    print(script_result)
+    # result = {'cookies': cookies, 'script_result': script_result}
+    result = {'cookies': cookies}
     return jsonify(result)
 
 if __name__ == '__main__':
